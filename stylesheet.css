@@ -176,7 +176,7 @@ a {
     color: white; 
     text-decoration: none; 
 }
-/* Mobile Styles */
+//* Mobile Styles */
 @media (max-width: 768px) {
     .home {
         flex-direction: column; /* Stack elements vertically */
@@ -185,6 +185,7 @@ a {
 
     .home-left, .home-right {
         width: 100%; /* Full width on mobile */
+        padding: 0; /* Remove padding for a better layout */
     }
 
     .navbar {
@@ -195,11 +196,17 @@ a {
     .nav-right {
         flex-direction: column; /* Stack links */
         align-items: center; /* Center links */
+        width: 100%; /* Full width on mobile */
+    }
+
+    .nav-left {
+        text-align: center; /* Center the left navbar text */
+        width: 100%; /* Full width */
     }
 
     .skillset, .expset, .projectset {
-        width: 100%; /* Full width for skill/experience/project sections */
-        margin: 10px 0; /* Margin for spacing */
+        width: 90%; /* Slightly less than full width for padding */
+        margin: 10px auto; /* Centered with margin for spacing */
         text-align: center; /* Center text in boxes */
     }
 
@@ -210,6 +217,23 @@ a {
 
     .contact-info {
         text-align: center; /* Center contact information */
+        font-size: 20px; /* Adjust font size for better readability */
+    }
+
+    /* Adjust heading sizes for mobile */
+    .home-h1 {
+        font-size: 22px; /* Smaller heading size */
+    }
+
+    .skill-head, .con-head {
+        font-size: 24px; /* Slightly larger font size for headings */
+    }
+
+    .subskills, .subexp, .subprojects {
+        flex-direction: column; /* Stack sub-sections vertically */
+        align-items: center; /* Center align sub-sections */
+        padding-left: 0; /* Remove left padding */
     }
 }
+
 
