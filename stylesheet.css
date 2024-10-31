@@ -176,3 +176,40 @@ a {
     color: white; 
     text-decoration: none; 
 }
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center; /* Center text */
+    }
+
+    .home-left, .home-right {
+        width: 100%; /* Full width on mobile */
+    }
+
+    .navbar {
+        flex-direction: column; /* Stack navbar items */
+        align-items: center; /* Center items */
+    }
+
+    .nav-right {
+        flex-direction: column; /* Stack links */
+        align-items: center; /* Center links */
+    }
+
+    .skillset, .expset, .projectset {
+        width: 100%; /* Full width for skill/experience/project sections */
+        margin: 10px 0; /* Margin for spacing */
+        text-align: center; /* Center text in boxes */
+    }
+
+    .icon {
+        width: 40px; /* Smaller icon size for mobile */
+        height: 40px; /* Smaller icon size for mobile */
+    }
+
+    .contact-info {
+        text-align: center; /* Center contact information */
+    }
+}
+
